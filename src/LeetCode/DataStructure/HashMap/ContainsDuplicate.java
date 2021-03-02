@@ -7,6 +7,8 @@ import java.util.HashSet;
  * 数据结构：哈希表
  * leetcode:https://leetcode-cn.com/problems/contains-duplicate/
  * 问题描述：判断是否存在重复元素
+ *
+ * @author laomao
  * */
 public class ContainsDuplicate {
     //方法一：HashMap

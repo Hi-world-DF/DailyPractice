@@ -1,4 +1,4 @@
-package everyday;
+package DataStructure.HashMap;
 
 import java.util.HashMap;
 
