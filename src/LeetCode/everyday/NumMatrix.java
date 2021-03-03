@@ -9,7 +9,7 @@ package everyday;
  */
 public class NumMatrix {
 
-    //方法1：
+    /** 方法1：*/
     int[][] sum;
 
     /**
