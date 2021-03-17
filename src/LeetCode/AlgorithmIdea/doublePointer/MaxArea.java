@@ -1,4 +1,4 @@
-package everyday;
+package AlgorithmIdea.doublePointer;
 
 /**
  * 11. 盛最多水的容器

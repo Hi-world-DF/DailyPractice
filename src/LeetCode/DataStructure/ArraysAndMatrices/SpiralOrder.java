@@ -1,4 +1,4 @@
-package everyday;
+package DataStructure.ArraysAndMatrices;
 
 import java.util.ArrayList;
 import java.util.List;

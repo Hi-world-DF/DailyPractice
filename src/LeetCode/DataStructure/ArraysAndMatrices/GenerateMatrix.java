@@ -1,7 +1,5 @@
-package everyday;
+package DataStructure.ArraysAndMatrices;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 /**
  * 59. 螺旋矩阵 II
