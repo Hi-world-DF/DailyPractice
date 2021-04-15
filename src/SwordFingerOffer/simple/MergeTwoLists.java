@@ -1,4 +1,4 @@
-package SwordFingerOffer;
+package SwordFingerOffer.simple;
 
 /**
  * 剑指 Offer 25. 合并两个排序的链表

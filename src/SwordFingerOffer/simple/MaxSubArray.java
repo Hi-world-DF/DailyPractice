@@ -1,4 +1,4 @@
-package SwordFingerOffer;
+package SwordFingerOffer.simple;
 
 /**
  * 剑指 Offer 42. 连续子数组的最大和

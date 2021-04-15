@@ -1,6 +1,4 @@
-package SwordFingerOffer;
-
-import java.util.List;
+package SwordFingerOffer.simple;
 
 /**
  * 剑指 Offer 18. 删除链表的节点

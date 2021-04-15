@@ -1,4 +1,4 @@
-package SwordFingerOffer;
+package SwordFingerOffer.simple;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package SwordFingerOffer;
+package SwordFingerOffer.simple;
 
 /**
  * 剑指 Offer 05. 替换空格

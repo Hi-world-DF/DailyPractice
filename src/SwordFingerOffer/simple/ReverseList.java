@@ -1,7 +1,4 @@
-package SwordFingerOffer;
-
-import java.util.ArrayDeque;
-import java.util.Deque;
+package SwordFingerOffer.simple;
 
 /**
  * 剑指 Offer 24. 反转链表
