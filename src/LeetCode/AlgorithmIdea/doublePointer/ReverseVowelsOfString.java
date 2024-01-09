@@ -1,4 +1,4 @@
-package AlgorithmIdea.doublePointer;
+package LeetCode.AlgorithmIdea.doublePointer;
 
 import java.util.Arrays;
 import java.util.HashSet;

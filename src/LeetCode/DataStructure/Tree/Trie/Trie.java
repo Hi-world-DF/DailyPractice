@@ -1,4 +1,4 @@
-package DataStructure.Tree.Trie;
+package LeetCode.DataStructure.Tree.Trie;
 /**
  * 数据结构：树【前缀二叉树】
  * leetcode:https://leetcode-cn.com/problems/implement-trie-prefix-tree/

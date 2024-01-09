@@ -1,4 +1,4 @@
-package AlgorithmIdea.math;
+package LeetCode.AlgorithmIdea.math;
 /**
  * 数学问题
  * https://leetcode-cn.com/problems/add-strings/

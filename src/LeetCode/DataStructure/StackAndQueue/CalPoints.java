@@ -1,4 +1,4 @@
-package DataStructure.StackAndQueue;
+package LeetCode.DataStructure.StackAndQueue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

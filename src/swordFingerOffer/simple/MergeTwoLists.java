@@ -1,4 +1,6 @@
-package SwordFingerOffer.simple;
+package swordFingerOffer.simple;
+
+import LeetCode.everyday.ListNode;
 
 /**
  * 剑指 Offer 25. 合并两个排序的链表

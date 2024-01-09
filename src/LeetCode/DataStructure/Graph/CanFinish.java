@@ -1,4 +1,4 @@
-package DataStructure.Graph;
+package LeetCode.DataStructure.Graph;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

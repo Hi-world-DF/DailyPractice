@@ -1,4 +1,4 @@
-package DataStructure.StackAndQueue;
+package LeetCode.DataStructure.StackAndQueue;
 /**
  * 数据结构：栈和队列
  * leetcode：https://leetcode-cn.com/problems/min-stack/

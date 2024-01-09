@@ -1,4 +1,4 @@
-package com.DesignPatterns;
+package javaBasics.com.DesignPatterns;
 
 /**
  * 单例模式：Ⅲ 懒汉式-线程安全

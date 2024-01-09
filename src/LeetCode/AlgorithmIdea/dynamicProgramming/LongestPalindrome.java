@@ -1,4 +1,4 @@
-package AlgorithmIdea.dynamicProgramming;
+package LeetCode.AlgorithmIdea.dynamicProgramming;
 
 /**
  * leetcode 5. 最长回文子串

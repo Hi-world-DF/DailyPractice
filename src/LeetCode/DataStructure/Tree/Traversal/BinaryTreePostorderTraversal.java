@@ -1,4 +1,6 @@
-package DataStructure.Tree.Traversal;
+package LeetCode.DataStructure.Tree.Traversal;
+
+import swordFingerOffer.simple.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

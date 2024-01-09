@@ -1,4 +1,4 @@
-package DataStructure.String;
+package LeetCode.DataStructure.String;
 /**
  * 数据结构：字符串
  * leetcode：https://leetcode-cn.com/problems/isomorphic-strings/

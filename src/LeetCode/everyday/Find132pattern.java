@@ -1,4 +1,4 @@
-package everyday;
+package LeetCode.everyday;
 
 /**
  * 456. 132模式

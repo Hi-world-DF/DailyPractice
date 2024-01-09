@@ -1,4 +1,7 @@
-package com.dev.demo;
+package swordFingerOffer.all;
+
+import LeetCode.everyday.ListNode;
+import swordFingerOffer.simple.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -1069,6 +1072,33 @@ public class test {
 
     // 57.在一个排序的链表中，存在重复的结点，请删除该链表中重复的结点，重复的结点不保留，返回链表头指
     //针。
+    public ListNode deleteDuplication(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode dummy = new ListNode(0); // 创建一个新的头节点
+        dummy.next = head; // 连接链表到新的头节点
+        ListNode pre = dummy;
+        ListNode cur = head;
+
+        while (cur != null && cur.next != null) {
+            if (cur.val == cur.next.val) { // 找到相同的节点
+                cur = cur.next;
+                while (cur.next != null && cur.val == cur.next.val) { // 跳过相同的节点
+                    cur = cur.next;
+                }
+                // 将pre节点的next指向cur的next，即删除了与cur值相同的节点
+                pre.next = cur.next;
+                cur = cur.next; // pre不变，cur向后移动
+            } else { // 非重复节点，两个指针同时向后移动
+                pre = cur;
+                cur = cur.next;
+            }
+        }
+
+        return dummy.next; // 返回去除重复元素后的链表头
+    }
 
     // 58.给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回。注意，树中的结点不仅
     //包含左右子结点，同时包含指向父结点的指针。

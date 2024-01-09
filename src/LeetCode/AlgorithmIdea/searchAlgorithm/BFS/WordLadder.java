@@ -1,4 +1,4 @@
-package AlgorithmIdea.searchAlgorithm.BFS;
+package LeetCode.AlgorithmIdea.searchAlgorithm.BFS;
 /**
  * 搜索算法：BFS（广度优先搜索）
  * leetcode:https://leetcode-cn.com/problems/word-ladder/

@@ -1,4 +1,4 @@
-package com.niuke.test;
+package Test.com.niuke.test;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

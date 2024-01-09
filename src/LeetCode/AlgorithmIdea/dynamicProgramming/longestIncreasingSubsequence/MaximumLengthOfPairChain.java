@@ -1,4 +1,4 @@
-package AlgorithmIdea.dynamicProgramming.longestIncreasingSubsequence;
+package LeetCode.AlgorithmIdea.dynamicProgramming.longestIncreasingSubsequence;
 /**
  * 动态规划：最长递增子序列
  * leetcode:https://leetcode-cn.com/problems/maximum-length-of-pair-chain/

@@ -1,4 +1,4 @@
-package SwordFingerOffer.simple;
+package swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 57. 和为s的两个数字

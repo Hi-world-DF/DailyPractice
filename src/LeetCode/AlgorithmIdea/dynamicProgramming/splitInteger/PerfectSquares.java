@@ -1,4 +1,4 @@
-package AlgorithmIdea.dynamicProgramming.splitInteger;
+package LeetCode.AlgorithmIdea.dynamicProgramming.splitInteger;
 
 import java.util.Arrays;
 import java.util.HashSet;

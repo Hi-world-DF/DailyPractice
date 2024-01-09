@@ -1,4 +1,7 @@
-package DataStructure.Tree.Recursive;
+package LeetCode.DataStructure.Tree.Recursive;
+
+import swordFingerOffer.simple.TreeNode;
+
 /**
  * 数据结构：树【递归】
  * leetcode:https://leetcode-cn.com/problems/invert-binary-tree/

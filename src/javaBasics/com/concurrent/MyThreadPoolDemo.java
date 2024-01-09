@@ -1,4 +1,4 @@
-package com.concurrent;
+package javaBasics.com.concurrent;
 
 import java.util.concurrent.*;
 

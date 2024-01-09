@@ -1,4 +1,6 @@
-package DataStructure.Tree.LevelTraversal;
+package LeetCode.DataStructure.Tree.LevelTraversal;
+
+import swordFingerOffer.simple.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

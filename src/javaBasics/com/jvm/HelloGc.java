@@ -1,4 +1,4 @@
-package com.jvm;
+package javaBasics.com.jvm;
 
 public class HelloGc {
     public static void main(String[] args) throws Exception {

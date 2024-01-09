@@ -1,4 +1,4 @@
-package DataStructure.LinkedList;
+package LeetCode.DataStructure.LinkedList;
 
 import java.util.Stack;
 

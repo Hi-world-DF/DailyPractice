@@ -1,4 +1,4 @@
-package everyday;
+package LeetCode.everyday;
 
 /**
  * 28. 实现 strStr()

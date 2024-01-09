@@ -1,4 +1,4 @@
-package com.jvm.reference;
+package javaBasics.com.jvm.reference;
 /**
  * 四大引用：强引用
  * 当内存不足，JVM开始垃圾回收机制，对于强引用的对象，就算出现了OOM也不会将该对象进行回收，死都不收

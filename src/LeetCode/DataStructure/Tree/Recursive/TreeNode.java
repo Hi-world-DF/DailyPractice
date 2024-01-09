@@ -1,4 +1,4 @@
-package DataStructure.Tree.Recursive;
+package LeetCode.DataStructure.Tree.Recursive;
 /**
  * TreeNode定义
  * */

@@ -1,4 +1,4 @@
-package DataStructure.ArraysAndMatrices;
+package LeetCode.DataStructure.ArraysAndMatrices;
 
 /**
  * 73. 矩阵置零

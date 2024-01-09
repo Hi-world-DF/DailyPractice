@@ -1,6 +1,5 @@
-package com.juc;
+package javaBasics.com.juc;
 
-import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
 /**

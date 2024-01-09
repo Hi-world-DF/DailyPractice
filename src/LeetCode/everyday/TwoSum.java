@@ -1,4 +1,4 @@
-package everyday;
+package LeetCode.everyday;
 
 /**
  * TODO

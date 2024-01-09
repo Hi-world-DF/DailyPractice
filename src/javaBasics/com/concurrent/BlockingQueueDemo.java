@@ -1,4 +1,4 @@
-package com.concurrent;
+package javaBasics.com.concurrent;
 
 /**
  * 阻塞队列

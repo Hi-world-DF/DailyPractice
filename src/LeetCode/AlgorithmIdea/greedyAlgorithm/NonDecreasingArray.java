@@ -1,4 +1,4 @@
-package AlgorithmIdea.greedyAlgorithm;
+package LeetCode.AlgorithmIdea.greedyAlgorithm;
 
 /**
  * 贪心算法

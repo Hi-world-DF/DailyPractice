@@ -1,7 +1,4 @@
-package everyday;
-
-
-import java.util.List;
+package LeetCode.everyday;
 
 /**
  * 剑指 Offer 25. 合并两个排序的链表

@@ -1,6 +1,4 @@
-package DataStructure.LinkedList;
-
-import org.w3c.dom.ls.LSException;
+package LeetCode.DataStructure.LinkedList;
 
 /**
  * 数据结构：链表

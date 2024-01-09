@@ -1,4 +1,4 @@
-package AlgorithmIdea.greedyAlgorithm;
+package LeetCode.AlgorithmIdea.greedyAlgorithm;
 
 import java.util.Arrays;
 import java.util.Comparator;

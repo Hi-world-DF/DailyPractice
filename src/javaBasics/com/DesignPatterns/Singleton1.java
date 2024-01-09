@@ -1,6 +1,4 @@
-package com.DesignPatterns;
-
-import com.niuke.test.Singleton;
+package javaBasics.com.DesignPatterns;
 
 /**
  * 单例模式：Ⅰ 懒汉式-线程不安全

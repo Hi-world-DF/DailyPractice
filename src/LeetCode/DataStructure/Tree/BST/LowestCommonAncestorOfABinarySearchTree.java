@@ -1,4 +1,7 @@
-package DataStructure.Tree.BST;
+package LeetCode.DataStructure.Tree.BST;
+
+import swordFingerOffer.simple.TreeNode;
+
 /**
  * 数据结构：树【BST 二叉查找树】
  * leetcode:https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/

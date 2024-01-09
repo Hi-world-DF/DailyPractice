@@ -1,4 +1,4 @@
-package DataStructure.ArraysAndMatrices;
+package LeetCode.DataStructure.ArraysAndMatrices;
 
 import java.util.ArrayList;
 import java.util.List;

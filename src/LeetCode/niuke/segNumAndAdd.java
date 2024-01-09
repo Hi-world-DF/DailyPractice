@@ -1,4 +1,4 @@
-package niuke;
+package LeetCode.niuke;
 
 import java.util.*;
 

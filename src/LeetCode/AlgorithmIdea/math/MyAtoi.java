@@ -1,4 +1,4 @@
-package AlgorithmIdea.math;
+package LeetCode.AlgorithmIdea.math;
 
 /**
  * 8. 字符串转换整数 (atoi)

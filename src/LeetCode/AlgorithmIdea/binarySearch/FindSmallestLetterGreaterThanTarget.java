@@ -1,4 +1,4 @@
-package AlgorithmIdea.binarySearch;
+package LeetCode.AlgorithmIdea.binarySearch;
 /**
  * 二分查找
  * leetcode:https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/

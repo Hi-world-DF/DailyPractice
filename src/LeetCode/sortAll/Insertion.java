@@ -1,4 +1,4 @@
-package sortAll;
+package LeetCode.sortAll;
 
 public class Insertion {
     public static void sort(int[] a){

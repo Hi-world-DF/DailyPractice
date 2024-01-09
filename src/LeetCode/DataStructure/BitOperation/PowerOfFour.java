@@ -1,4 +1,4 @@
-package DataStructure.BitOperation;
+package LeetCode.DataStructure.BitOperation;
 /**
  * 数据结构：位运算
  * leetcode：https://leetcode-cn.com/problems/power-of-four/

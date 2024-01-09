@@ -1,4 +1,4 @@
-package AlgorithmIdea.dynamicProgramming.Coin;
+package LeetCode.AlgorithmIdea.dynamicProgramming.Coin;
 
 /**
  * leetcode 322. 零钱兑换

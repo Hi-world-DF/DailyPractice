@@ -1,6 +1,4 @@
-package com.DesignPatterns;
-
-import com.niuke.test.Singleton;
+package javaBasics.com.DesignPatterns;
 
 /**
  * 单例模式：Ⅳ 双重校验锁-线程安全

@@ -1,4 +1,4 @@
-package Test1;
+package javaBasics.Test1;
 import java.util.*;
 public class Property {
     public static void main(String[] args){

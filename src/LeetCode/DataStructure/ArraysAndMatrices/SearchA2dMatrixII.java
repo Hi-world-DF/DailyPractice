@@ -1,4 +1,4 @@
-package DataStructure.ArraysAndMatrices;
+package LeetCode.DataStructure.ArraysAndMatrices;
 /**
  * 数据结构：数组和矩阵
  * leetcode：https://leetcode-cn.com/problems/search-a-2d-matrix-ii/

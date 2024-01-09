@@ -1,4 +1,4 @@
-package everyday;
+package LeetCode.everyday;
 
 /**
  * 304.二维区域和检索-矩阵不可变

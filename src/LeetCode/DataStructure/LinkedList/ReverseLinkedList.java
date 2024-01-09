@@ -1,4 +1,4 @@
-package DataStructure.LinkedList;
+package LeetCode.DataStructure.LinkedList;
 /**
  * 数据结构：链表
  * leetcode：https://leetcode-cn.com/problems/reverse-linked-list/

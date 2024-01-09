@@ -1,7 +1,4 @@
-package DataStructure.StackAndQueue;
-
-import java.util.ArrayDeque;
-import java.util.Deque;
+package LeetCode.DataStructure.StackAndQueue;
 
 /**
  * 删除字符串中的所有相邻重复项

@@ -1,4 +1,4 @@
-package AlgorithmIdea.doublePointer;
+package LeetCode.AlgorithmIdea.doublePointer;
 
 /**
  * 11. 盛最多水的容器

@@ -1,6 +1,4 @@
-package DataStructure.ArraysAndMatrices;
-
-import java.util.List;
+package LeetCode.DataStructure.ArraysAndMatrices;
 
 /**
  * 566. 重塑矩阵

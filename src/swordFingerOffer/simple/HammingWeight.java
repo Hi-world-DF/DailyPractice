@@ -1,4 +1,4 @@
-package SwordFingerOffer.simple;
+package swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 15. 二进制中1的个数

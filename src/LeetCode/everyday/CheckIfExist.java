@@ -1,6 +1,5 @@
-package everyday;
+package LeetCode.everyday;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -23,7 +22,7 @@ public class CheckIfExist {
         int len = arr.length;
         for (int i = 0; i < len; i++) {
             for (int j = 0; j != i && j < len; j++) {
-                if (arr[j] == 2 * arr[i] || arr[i] == 2 * arr[j] ) {
+                if (arr[j] == 2 * arr[i] || arr[i] == 2 * arr[j]) {
                     return true;
                 }
             }
@@ -39,15 +38,15 @@ public class CheckIfExist {
      */
     public boolean checkIfExist2(int[] arr) {
         int len = arr.length;
-        HashMap<Integer,Integer> map = new HashMap<>(len);
+        HashMap<Integer, Integer> map = new HashMap<>(len);
         for (int i = 0; i < len; i++) {
-            map.put(arr[i], map.getOrDefault(arr[i],0) +1);
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
         }
         for (int key : map.keySet()) {
             if (key == 0 && map.get(0) > 2) {
                 return true;
             }
-            if (key != 0 && map.containsKey(2*key)) {
+            if (key != 0 && map.containsKey(2 * key)) {
                 return true;
             }
         }

@@ -1,6 +1,4 @@
-package everyday;
-
-import AlgorithmIdea.math.Base7;
+package LeetCode.everyday;
 
 import java.util.Iterator;
 import java.util.LinkedList;

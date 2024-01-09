@@ -1,4 +1,4 @@
-package SwordFingerOffer.simple;
+package swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 24. 反转链表

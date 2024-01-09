@@ -1,4 +1,4 @@
-package sortAll;
+package LeetCode.sortAll;
 
 /**
  * 2020/05/23

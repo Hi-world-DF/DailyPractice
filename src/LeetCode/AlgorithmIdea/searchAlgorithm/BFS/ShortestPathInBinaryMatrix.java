@@ -1,4 +1,4 @@
-package AlgorithmIdea.searchAlgorithm.BFS;
+package LeetCode.AlgorithmIdea.searchAlgorithm.BFS;
 
 import javafx.util.Pair;
 

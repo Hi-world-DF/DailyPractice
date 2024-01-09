@@ -1,4 +1,4 @@
-package SwordFingerOffer.simple;
+package swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 62. 圆圈中最后剩下的数字

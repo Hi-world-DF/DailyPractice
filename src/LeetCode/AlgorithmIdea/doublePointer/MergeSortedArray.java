@@ -1,4 +1,4 @@
-package AlgorithmIdea.doublePointer;
+package LeetCode.AlgorithmIdea.doublePointer;
 /**
  * 双指针问题
  * leetcode:https://leetcode-cn.com/problems/merge-sorted-array/

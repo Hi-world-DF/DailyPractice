@@ -1,9 +1,5 @@
-package com.juc;
+package javaBasics.com.juc;
 
-import org.springframework.asm.SpringAsmInfo;
-import sun.awt.windows.ThemeReader;
-
-import java.util.Arrays;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -12,15 +8,14 @@ import java.util.concurrent.locks.ReentrantLock;
  * 题目：两个线程，可以操作初始值为0的一个变量，
  * 实现一个线程对该变量加1，一个线程对该变量减1；
  * 实现交替，来多轮，变量初始值为0；
- *
+ * <p>
  * 1.高内聚低耦合，线程操作资源类
  * 2.判断/操作/通知
  * 3.防止多线程的虚假唤醒
- *
+ * <p>
  * 知识小结：多线程编程套路+while判断+新版写法
- *
- * */
-class AirCondition{
+ */
+class AirCondition {
     private int number = 0;
     private Lock lock = new ReentrantLock();
     Condition condition = lock.newCondition();
@@ -43,18 +38,18 @@ class AirCondition{
 //        System.out.println(Thread.currentThread().getName()+"\t"+number);
 //        this.notifyAll();
 //    }
+
     /**
      * 用Lock实现
-     *
-     * */
-    public void addNumber(){
+     */
+    public void addNumber() {
         lock.lock();
-        try{
-            while(number != 0){
+        try {
+            while (number != 0) {
                 condition.await();
             }
             number++;
-            System.out.println(Thread.currentThread().getName()+"\t"+number);
+            System.out.println(Thread.currentThread().getName() + "\t" + number);
             condition.signalAll();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -65,16 +60,16 @@ class AirCondition{
 
     public void subNumber() {
         lock.lock();
-        try{
-            while(number == 0){
+        try {
+            while (number == 0) {
                 condition.await();
             }
             number--;
-            System.out.println(Thread.currentThread().getName()+"\t"+number);
+            System.out.println(Thread.currentThread().getName() + "\t" + number);
             condition.signalAll();
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
@@ -87,27 +82,27 @@ public class ProdConsumerDemo04 {
         AirCondition airCondition = new AirCondition();
         //两个线程
         new Thread(() -> {
-            for(int i = 0;i < 10;i++){
+            for (int i = 0; i < 10; i++) {
                 airCondition.addNumber();
             }
-        },"A").start();
+        }, "A").start();
 
-        new Thread(()->{
-            for(int i = 0; i < 10;i++){
+        new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
                 airCondition.subNumber();
             }
-        },"B").start();
+        }, "B").start();
 
-        new Thread(()->{
-            for(int i = 0; i < 10;i++){
+        new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
                 airCondition.addNumber();
             }
-        },"C").start();
+        }, "C").start();
 
-        new Thread(()->{
-            for(int i = 0; i < 10;i++){
+        new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
                 airCondition.subNumber();
             }
-        },"D").start();
+        }, "D").start();
     }
 }

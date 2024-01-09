@@ -1,5 +1,7 @@
-package DataStructure.Tree.BST;
+package LeetCode.DataStructure.Tree.BST;
 
+
+import swordFingerOffer.simple.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

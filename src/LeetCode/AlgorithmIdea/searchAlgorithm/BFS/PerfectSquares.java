@@ -1,4 +1,4 @@
-package AlgorithmIdea.searchAlgorithm.BFS;
+package LeetCode.AlgorithmIdea.searchAlgorithm.BFS;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

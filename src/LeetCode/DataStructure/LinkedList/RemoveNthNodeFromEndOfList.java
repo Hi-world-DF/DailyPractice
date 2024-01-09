@@ -1,5 +1,5 @@
 
-package DataStructure.LinkedList;
+package LeetCode.DataStructure.LinkedList;
 
 /**
  * 数据结构：链表

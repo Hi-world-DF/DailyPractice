@@ -1,4 +1,4 @@
-package DataStructure.Tree.LevelTraversal;
+package LeetCode.DataStructure.Tree.LevelTraversal;
 /**
  * TreeNode定义
  * */

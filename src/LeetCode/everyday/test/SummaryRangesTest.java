@@ -1,6 +1,6 @@
-package everyday.test;
+package LeetCode.everyday.test;
 
-import everyday.SummaryRanges;
+import LeetCode.everyday.SummaryRanges;
 import org.junit.Test;
 
 /**

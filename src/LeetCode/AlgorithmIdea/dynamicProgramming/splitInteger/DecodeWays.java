@@ -1,4 +1,4 @@
-package AlgorithmIdea.dynamicProgramming.splitInteger;
+package LeetCode.AlgorithmIdea.dynamicProgramming.splitInteger;
 /**
  * 动态规划：分割整数
  * leetcode:https://leetcode-cn.com/problems/decode-ways/

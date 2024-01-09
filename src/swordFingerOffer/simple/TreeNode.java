@@ -1,4 +1,4 @@
-package SwordFingerOffer.simple;
+package swordFingerOffer.simple;
 
 /**
  * TreeNode
@@ -8,10 +8,10 @@ package SwordFingerOffer.simple;
  * @since 1.0.0
  */
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) {
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+    public TreeNode(int x) {
         val = x;
     }
 }

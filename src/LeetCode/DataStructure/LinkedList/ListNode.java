@@ -1,4 +1,4 @@
-package DataStructure.LinkedList;
+package LeetCode.DataStructure.LinkedList;
 
 class ListNode {
      int val;

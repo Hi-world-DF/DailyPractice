@@ -1,4 +1,4 @@
-package AlgorithmIdea.binarySearch;
+package LeetCode.AlgorithmIdea.binarySearch;
 
 import java.util.Scanner;
 

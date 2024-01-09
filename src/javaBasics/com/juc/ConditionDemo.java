@@ -1,4 +1,4 @@
-package com.juc;
+package javaBasics.com.juc;
 
 /**
  * 多线程之间按顺序调度 A > B > C > A

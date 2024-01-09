@@ -1,5 +1,6 @@
-package DataStructure.Tree.BST;
+package LeetCode.DataStructure.Tree.BST;
 
+import swordFingerOffer.simple.TreeNode;
 
 /**
  * 数据结构：树【BST 二叉查找树】

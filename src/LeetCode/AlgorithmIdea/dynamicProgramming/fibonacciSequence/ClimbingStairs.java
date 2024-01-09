@@ -1,4 +1,4 @@
-package AlgorithmIdea.dynamicProgramming.fibonacciSequence;
+package LeetCode.AlgorithmIdea.dynamicProgramming.fibonacciSequence;
 /**
  * 动态规划：斐波那契数列
  * leetcode:https://leetcode-cn.com/problems/climbing-stairs/

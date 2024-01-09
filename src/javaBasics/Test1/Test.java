@@ -1,4 +1,4 @@
-package Test1;
+package javaBasics.Test1;
 public class Test{
     public static void main(String[] args){
         int f = 0;

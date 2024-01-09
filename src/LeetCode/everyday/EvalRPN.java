@@ -1,6 +1,4 @@
-package everyday;
-
-import com.sun.jndi.toolkit.ctx.AtomicContext;
+package LeetCode.everyday;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -17,7 +15,7 @@ public class EvalRPN {
      * 根据 逆波兰表示法，求表达式的值。
      *
      * @param tokens 初始逆波兰表达式
-     * @return  返回最后的值
+     * @return 返回最后的值
      */
     public int evalRPN(String[] tokens) {
         int n = tokens.length;
@@ -35,7 +33,7 @@ public class EvalRPN {
                 int num1 = stack.pop();
                 int num2 = stack.pop();
                 stack.push(num2 * num1);
-            }  else if (tokens[i].equals("/")) {
+            } else if (tokens[i].equals("/")) {
                 int num1 = stack.pop();
                 int num2 = stack.pop();
                 stack.push(num2 / num1);

@@ -1,4 +1,4 @@
-package AlgorithmIdea.math;
+package LeetCode.AlgorithmIdea.math;
 /**
  * 数学问题
  * leetcode:https://leetcode-cn.com/problems/count-primes/

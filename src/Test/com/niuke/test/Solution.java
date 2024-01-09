@@ -1,31 +1,32 @@
-package com.niuke.test;
-
-
-import java.beans.IntrospectionException;
-import java.lang.reflect.Array;
-import java.sql.SQLOutput;
-
-import java.util.*;
+package Test.com.niuke.test;
 
 class TreeNode {
-     int val;
-     TreeNode left;
-     TreeNode right;
-     TreeNode() {}
-     TreeNode(int val) { this.val = val; }
-     TreeNode(int val, TreeNode left, TreeNode right) {
-         this.val = val;
-         this.left = left;
-         this.right = right;
-     }
- }
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
 
 class ListNode {
-     int val;
-     ListNode next;
-     ListNode(int x) { val = x; }
- }
+    int val;
+    ListNode next;
 
+    ListNode(int x) {
+        val = x;
+    }
+}
 
 public class Solution {
 
@@ -33,7 +34,7 @@ public class Solution {
 
         ListNode cur = head;
         int count = 0;
-        while (cur != null){
+        while (cur != null) {
             count++;
             cur = cur.next;
         }
@@ -43,9 +44,6 @@ public class Solution {
         return head;
     }
 
-
-
-
     /**
      * [-2,1,-3,4,-1,2,1,-5,4]
      * pre = -2   maxA = -2
@@ -53,7 +51,6 @@ public class Solution {
      * pre = -2   maxA = 1
      * pre = 4    maxA = 4
      * pre = 3
-     *
      */
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package DataStructure.Tree.BST;
+package LeetCode.DataStructure.Tree.BST;
 
 /**
  * 数据结构：树【BST 二叉查找树】

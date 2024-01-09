@@ -1,4 +1,4 @@
-package AlgorithmIdea.dynamicProgramming.arrayInterval;
+package LeetCode.AlgorithmIdea.dynamicProgramming.arrayInterval;
 /**
  * 动态规划：数组区间
  * leetcode:https://leetcode-cn.com/problems/arithmetic-slices/

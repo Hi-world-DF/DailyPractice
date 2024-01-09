@@ -1,4 +1,4 @@
-package DataStructure.Tree.BST;
+package LeetCode.DataStructure.Tree.BST;
 
 public class TreeNode {
     int val;

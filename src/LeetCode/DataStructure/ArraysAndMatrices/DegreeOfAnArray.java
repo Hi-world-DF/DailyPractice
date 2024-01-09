@@ -1,4 +1,4 @@
-package DataStructure.ArraysAndMatrices;
+package LeetCode.DataStructure.ArraysAndMatrices;
 
 import java.util.HashMap;
 import java.util.Map;

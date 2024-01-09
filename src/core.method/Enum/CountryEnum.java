@@ -1,10 +1,7 @@
-package Enum;
+package core.method.Enum;
 
-
-import jdk.nashorn.internal.objects.annotations.Getter;
-
-public enum  CountryEnum {
-    ONE(1,"name","tel"),TWO(2,"wang","131"),THREE(3,"liu","121"),FOUR(4,"zhao","133"),FIVE(5,"zhou","159");
+public enum CountryEnum {
+    ONE(1, "name", "tel"), TWO(2, "wang", "131"), THREE(3, "liu", "121"), FOUR(4, "zhao", "133"), FIVE(5, "zhou", "159");
 
     public void setEnumKey(Integer enumKey) {
         this.enumKey = enumKey;
@@ -40,21 +37,21 @@ public enum  CountryEnum {
         this.telMessage = telMessage;
     }
 
-    public static CountryEnum forEach_CountryEnum(int index){
+    public static CountryEnum forEach_CountryEnum(int index) {
         CountryEnum[] myArray = CountryEnum.values();
-        for(CountryEnum element : myArray){
-            if(index == element.getEnumKey()){
+        for (CountryEnum element : myArray) {
+            if (index == element.getEnumKey()) {
                 return element;
             }
         }
         return null;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int n = 5;
-        for(int i = 1;i <= n;i++){
+        for (int i = 1; i <= n; i++) {
             CountryEnum e = CountryEnum.forEach_CountryEnum(i);
-            System.out.println(e+":键值:"+e.getEnumKey()+":姓名:"+e.getNameMessage()+":电话:"+e.getTelMessage());
+            System.out.println(e + ":键值:" + e.getEnumKey() + ":姓名:" + e.getNameMessage() + ":电话:" + e.getTelMessage());
         }
     }
 }

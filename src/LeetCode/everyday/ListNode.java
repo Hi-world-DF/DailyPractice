@@ -1,4 +1,4 @@
-package everyday;
+package LeetCode.everyday;
 
 /**
  * ListNode
@@ -8,9 +8,9 @@ package everyday;
  * @since 1.0.0
  */
 public class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
+    public int val;
+    public ListNode next;
+    public ListNode(int x) {
         val = x;
     }
 }

@@ -1,4 +1,6 @@
-package SwordFingerOffer.simple;
+package swordFingerOffer.simple;
+
+import swordFingerOffer.simple.TreeNode;
 
 /**
  * 剑指 Offer 28. 对称的二叉树

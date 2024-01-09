@@ -1,4 +1,4 @@
-package com.juc;
+package javaBasics.com.juc;
 
 /**
  * 函数式接口中可以使用：

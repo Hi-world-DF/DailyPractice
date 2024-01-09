@@ -1,4 +1,4 @@
-package AlgorithmIdea.dynamicProgramming.matrixPath;
+package LeetCode.AlgorithmIdea.dynamicProgramming.matrixPath;
 /**
  * 动态规划：矩阵路径
  * leetcode:https://leetcode-cn.com/problems/unique-paths/

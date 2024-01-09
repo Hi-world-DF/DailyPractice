@@ -1,4 +1,4 @@
-package DataStructure.Tree.Traversal;
+package LeetCode.DataStructure.Tree.Traversal;
 
 public class TreeNode {
     int val;

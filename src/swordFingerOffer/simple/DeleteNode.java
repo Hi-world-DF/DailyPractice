@@ -1,4 +1,6 @@
-package SwordFingerOffer.simple;
+package swordFingerOffer.simple;
+
+import LeetCode.everyday.ListNode;
 
 /**
  * 剑指 Offer 18. 删除链表的节点
@@ -14,7 +16,7 @@ public class DeleteNode {
      * 返回删除后的链表的头节点。
      *
      * @param head 链表头节点
-     * @param val 删除节点的值
+     * @param val  删除节点的值
      * @return
      */
     public ListNode deleteNode(ListNode head, int val) {
@@ -23,7 +25,7 @@ public class DeleteNode {
         }
         ListNode pre = head, cur = head.next;
         while (cur != null) {
-            if (cur.val == val ) {
+            if (cur.val == val) {
                 pre.next = cur.next;
                 break;
             } else {

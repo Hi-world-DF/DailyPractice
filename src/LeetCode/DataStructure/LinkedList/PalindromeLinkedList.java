@@ -1,37 +1,34 @@
-package DataStructure.LinkedList;
-
-import java.util.Stack;
+package LeetCode.DataStructure.LinkedList;
 
 /**
  * 数据结构：链表
  * leetcode：https://leetcode-cn.com/problems/palindrome-linked-list/
  * 回文链表
- *
+ * <p>
  * >>>>>>>>>>>>>>>>>>>>>>>未通过
- *
- * */
+ */
 public class PalindromeLinkedList {
 
-    public boolean isPalindrome(ListNode head){
-        if(head == null || head.next == null){
+    public boolean isPalindrome(ListNode head) {
+        if (head == null || head.next == null) {
             return true;
         }
         ListNode slow = head;
         ListNode fast = head.next;
-        while(fast != null && fast.next != null){
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
-        if(fast != null){
+        if (fast != null) {
             slow = slow.next;
         }
-        cut(head,slow);
-        return isEqual(head,reverse(slow));
+        cut(head, slow);
+        return isEqual(head, reverse(slow));
     }
 
     private boolean isEqual(ListNode l1, ListNode l2) {
-        while(l1 != null && l2 != null){
-            if(l1.val != l2.val){
+        while (l1 != null && l2 != null) {
+            if (l1.val != l2.val) {
                 return false;
             }
             l1 = l1.next;
@@ -42,7 +39,7 @@ public class PalindromeLinkedList {
 
     private ListNode reverse(ListNode slow) {
         ListNode newHead = null;
-        while(slow != null){
+        while (slow != null) {
             ListNode nextNode = slow.next;
             slow.next = newHead;
             newHead = slow;
@@ -52,12 +49,11 @@ public class PalindromeLinkedList {
     }
 
     private void cut(ListNode head, ListNode slow) {
-        while(head.next != slow){
+        while (head.next != slow) {
             head = head.next;
         }
         head.next = null;
     }
-
 
 //    public boolean isPalindrome(ListNode head) {
 //        Stack<Integer> s = new Stack<>();
