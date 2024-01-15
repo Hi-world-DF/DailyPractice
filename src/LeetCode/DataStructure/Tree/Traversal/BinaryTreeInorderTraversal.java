@@ -23,7 +23,7 @@ public class BinaryTreeInorderTraversal {
                 currentNode = currentNode.left;
             }
             TreeNode node = stack.pop();
-            resultList.add(node.val);
+            resultList.add(node.value);
             currentNode = node.right;
         }
         return resultList;

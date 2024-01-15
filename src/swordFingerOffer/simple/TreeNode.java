@@ -8,10 +8,10 @@ package swordFingerOffer.simple;
  * @since 1.0.0
  */
 public class TreeNode {
-    public int val;
+    public int value;
     public TreeNode left;
     public TreeNode right;
     public TreeNode(int x) {
-        val = x;
+        value = x;
     }
 }

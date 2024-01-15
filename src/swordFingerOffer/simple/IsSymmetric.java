@@ -1,7 +1,5 @@
 package swordFingerOffer.simple;
 
-import swordFingerOffer.simple.TreeNode;
-
 /**
  * 剑指 Offer 28. 对称的二叉树
  *
@@ -21,7 +19,7 @@ public class IsSymmetric {
         if (l == null && r == null) {
             return true;
         }
-        if (l == null || r == null || l.val != r.val) {
+        if (l == null || r == null || l.value != r.value) {
             return false;
         }
         return recur(l.left, r.right) && recur(l.right, r.left);

@@ -6,10 +6,13 @@ import swordFingerOffer.simple.TreeNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
 import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Stack;
 import java.util.TreeSet;
 
@@ -111,7 +114,7 @@ public class test {
      * 15.输入一个链表，输出该链表中倒数第k个结点。
      *
      * @param head 链表head
-     * @param k 第k个结点
+     * @param k    第k个结点
      * @return 链表节点
      */
     public ListNode FindKthToTail(ListNode head, int k) {
@@ -175,7 +178,7 @@ public class test {
     public boolean HasSubtree(TreeNode root1, TreeNode root2) {
         boolean result = false;
         if (root1 != null && root2 != null) {
-            if (root1.val == root2.val) {
+            if (root1.value == root2.value) {
                 // 比较左右子树是否一致
                 result = isEqualTree(root1, root2);
             }
@@ -276,7 +279,7 @@ public class test {
         if (b == null) {
             return true;
         }
-        if (a.val == b.val) {
+        if (a.value == b.value) {
             return isEqualTree(a.left, b.left) && isEqualTree(a.right, b.right);
         }
         return false;
@@ -341,7 +344,7 @@ public class test {
         queue.add(root);
         while (!queue.isEmpty()) {
             final TreeNode poll = queue.poll();
-            list.add(poll.val);
+            list.add(poll.value);
             if (poll.left != null) {
                 queue.add(poll.left);
             }
@@ -392,8 +395,8 @@ public class test {
         if (null == root) {
             return;
         }
-        currentPath.add(root.val);
-        target -= root.val;
+        currentPath.add(root.value);
+        target -= root.value;
         if (null == root.left && null == root.right && target == 0) {
             result.add(currentPath);
         } else {
@@ -1026,7 +1029,6 @@ public class test {
         return str.matches("[+-]?\\d*(\\.\\d+)?([eE][+-]?\\d+)?");
     }
 
-
     // 55.请实现一个函数用来找出字符流中第一个只出现一次的字符。
     char[] chars = new char[256];
     StringBuilder sb = new StringBuilder();
@@ -1103,13 +1105,108 @@ public class test {
     // 58.给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回。注意，树中的结点不仅
     //包含左右子结点，同时包含指向父结点的指针。
 
-    // 59.请实现一个函数，用来判断一颗二叉树是不是对称的。注意，如果一个二叉树同此二叉树的镜像是同样
-    //的，定义其为对称的。
+    /**
+     * 59.请实现一个函数，用来判断一颗二叉树是不是对称的。注意，如果一个二叉树同此二叉树的镜像是同样的，定义其为对称的。
+     * <P>检测对称的函数</P>
+     *
+     * @param root 根节点
+     * @return 是否对称二叉树
+     */
+    public boolean isSymmetric(TreeNode root) {
+        return null == root || checkSymmetric(root.left, root.right);
+    }
 
-    // 60.请实现一个函数按照之字形打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右至左的顺序
-    //打印，第三行按照从左到右的顺序打印，依此类推。
+    private boolean checkSymmetric(TreeNode root1, TreeNode root2) {
+        // 如果左右子树的根节点都为null，是对称的
+        if (root1 == null && root2 == null) {
+            return true;
+        }
+        // 如果左右子树只有一个为null，或者左右子树的值不相同，说明不对称
+        if (root1 == null || root2 == null || root1.value != root2.value) {
+            return false;
+        }
 
-    // 61.从上到下按层打印二叉树，同一层结点从左至右输出。每一层输出一行。
+        // 接下来递归计算对应对称位置的子树是否对称
+        return checkSymmetric(root1.left, root2.right) && checkSymmetric(root1.right, root2.left);
+    }
+
+    /**
+     * 60.之字形打印二叉树。
+     * <p>即第一行按照从左到右的顺序打印，第二层按照从右至左的顺序打印，第三行按照从左到右的顺序打印，依此类推</p>
+     *
+     * @param root 二叉树根节点
+     * @return 列表
+     */
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> results = new ArrayList<>();
+        if (root == null) {
+            return results;
+        }
+        // 使用队列来进行广度优先搜索
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        nodeQueue.add(root);
+
+        // 每一层的节点的方向
+        boolean isOrderLeft = true;
+
+        while (!nodeQueue.isEmpty()) {
+            // 用来存储每一层的节点值
+            Deque<Integer> levelList = new LinkedList<>();
+            int size = nodeQueue.size();
+            for (int i = 0; i < size; ++i) {
+                TreeNode curNode = nodeQueue.poll();
+                // 根据方向存储节点值
+                if (isOrderLeft) {
+                    levelList.offerLast(curNode.value);
+                } else {
+                    levelList.offerFirst(curNode.value);
+                }
+                // 把下一层的节点放入队列中
+                if (curNode.left != null) {
+                    nodeQueue.offer(curNode.left);
+                }
+                if (curNode.right != null) {
+                    nodeQueue.offer(curNode.right);
+                }
+            }
+            results.add(new ArrayList<Integer>(levelList));
+            // 切换方向
+            isOrderLeft = !isOrderLeft;
+        }
+
+        return results;
+    }
+
+    /**
+     * 61.从上到下按层打印二叉树，同一层结点从左至右输出。每一层输出一行。
+     *
+     * @param root 跟节点
+     * @return list
+     */
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (null == root) {
+            return res;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            final int size = queue.size();
+            List<Integer> cur = new ArrayList<>(size);
+            for (int i = 0; i < size; i++) {
+                final TreeNode curNode = queue.poll();
+                cur.add(curNode.value);
+                if (null != curNode.left) {
+                    queue.add(curNode.left);
+                }
+                if (null != curNode.right) {
+                    queue.add(curNode.right);
+                }
+            }
+            res.add(cur);
+        }
+        return res;
+    }
 
     // 62.请实现两个函数，分别用来序列化和反序列化二叉树
 

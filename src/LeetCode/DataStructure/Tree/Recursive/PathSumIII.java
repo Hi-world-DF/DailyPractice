@@ -17,8 +17,8 @@ public class PathSumIII {
     private int pathSumStartRoot(TreeNode root, int sum) {
         if(root == null) return 0;
         int result = 0;
-        if(root.val == sum) result++;
-        result += pathSumStartRoot(root.left,sum-root.val)+pathSumStartRoot(root.right,sum-root.val);
+        if(root.value == sum) result++;
+        result += pathSumStartRoot(root.left,sum-root.value)+pathSumStartRoot(root.right,sum-root.value);
         return result;
     }
 }

@@ -16,7 +16,7 @@ public class SubtreeOfAnotherTree {
     private boolean isSubtreeFromRoot(TreeNode s, TreeNode t) {
         if (s == null && t == null) return true;
         if (s == null || t == null) return false;
-        if (s.val != t.val) return false;
+        if (s.value != t.value) return false;
         return isSubtreeFromRoot(s.left, t.left) && isSubtreeFromRoot(s.right, t.right);
     }
 }

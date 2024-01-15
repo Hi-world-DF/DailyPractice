@@ -12,7 +12,7 @@ public class SumOfLeftLeaves {
     public int sumOfLeftLeaves(TreeNode root) {
         int sum = 0;
         if(root == null) return 0;
-        if(isLeave(root.left)) return root.left.val + sumOfLeftLeaves(root.right);
+        if(isLeave(root.left)) return root.left.value + sumOfLeftLeaves(root.right);
         sum = sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right);
         return sum;
     }

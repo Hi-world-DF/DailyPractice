@@ -22,7 +22,7 @@ public class KthSmallestElementInABst {
         inOder(root.left,k);
         count++;
         if(count == k){
-            value = root.val;
+            value = root.value;
             return;
         }
         inOder(root.right,k);
@@ -31,7 +31,7 @@ public class KthSmallestElementInABst {
     //方法二：递归解法
     public int kthSmallest2(TreeNode root, int k) {
         int leftCurrent = minCount(root.left);
-        if(leftCurrent == k-1) return root.val;
+        if(leftCurrent == k-1) return root.value;
         if(leftCurrent > k-1) return kthSmallest2(root.left,k);
         return kthSmallest2(root.right,k-leftCurrent-1);
     }

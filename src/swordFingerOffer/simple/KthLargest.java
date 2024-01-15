@@ -29,7 +29,7 @@ public class KthLargest {
             return;
         }
         dfs (root.left, list);
-        list.add(root.val);
+        list.add(root.value);
         dfs (root.right, list);
     }
 }

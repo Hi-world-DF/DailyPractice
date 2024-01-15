@@ -17,8 +17,8 @@ public class ConvertBstToGreaterTree {
     private void traver(TreeNode node) {
         if(node == null) return;
         traver(node.right);
-        sum += node.val;
-        node.val = sum;
+        sum += node.value;
+        node.value = sum;
         traver(node.left);
     }
 }

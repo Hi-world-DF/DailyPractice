@@ -12,10 +12,10 @@ public class PathSum {
         if(root == null){
             return false;
         }
-        if(root.right == null && root.left == null && root.val == sum){
+        if(root.right == null && root.left == null && root.value == sum){
             return true;
         }
-        if(hasPathSum(root.left,sum-root.val)  || hasPathSum(root.right,sum-root.val)){
+        if(hasPathSum(root.left,sum-root.value)  || hasPathSum(root.right,sum-root.value)){
             return true;
         }
         return false;

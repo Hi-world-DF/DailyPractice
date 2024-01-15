@@ -18,10 +18,10 @@ public class LongestUniValuePath {
         int l = dfs(root.left);
         int r = dfs(root.right);
         int lPath = 0,rPath = 0;
-        if(root.left != null && root.left.val == root.val){
+        if(root.left != null && root.left.value == root.value){
             lPath = l + 1;
         }
-        if(root.right != null && root.right.val == root.val){
+        if(root.right != null && root.right.value == root.value){
             rPath = r + 1;
         }
         path = Math.max(path,lPath+rPath);

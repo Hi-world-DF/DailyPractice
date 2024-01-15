@@ -18,7 +18,7 @@ public class MinimumAbsoluteDifferenceInBST {
     private void inOrder(TreeNode root) {
         if(root == null) return;
         inOrder(root.left);
-        if(treeNode != null) result = Math.min(result,root.val - treeNode.val);
+        if(treeNode != null) result = Math.min(result,root.value - treeNode.value);
         treeNode = root;
         inOrder(root.right);
      }

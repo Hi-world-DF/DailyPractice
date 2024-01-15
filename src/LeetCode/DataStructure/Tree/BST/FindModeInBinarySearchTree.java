@@ -30,15 +30,15 @@ public class FindModeInBinarySearchTree {
         if(root == null) return;
         inOrder(root.left,maxNums);
         if(treeNode != null){
-            if(treeNode.val == root.val) current++;
+            if(treeNode.value == root.value) current++;
             else current = 1;
         }
         if(current > max){
             max = current;
             maxNums.clear();
-            maxNums.add(root.val);
+            maxNums.add(root.value);
         }else if(current == max){
-            maxNums.add(root.val);
+            maxNums.add(root.value);
         }
         treeNode = root;
         inOrder(root.right,maxNums);

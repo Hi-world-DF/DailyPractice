@@ -9,9 +9,9 @@ import swordFingerOffer.simple.TreeNode;
  * */
 public class LowestCommonAncestorOfABinarySearchTree {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if(root.val > p.val && root.val > q.val)
+        if(root.value > p.value && root.value > q.value)
             return lowestCommonAncestor(root.left,p,q);
-        if(root.val < p.val && root.val < q.val)
+        if(root.value < p.value && root.value < q.value)
             return lowestCommonAncestor(root.right,p,q);
         return root;
     }

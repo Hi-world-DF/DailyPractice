@@ -29,7 +29,7 @@ public class LevelOrder {
             List<Integer> list = new ArrayList<>();
             for (int i = queue.size(); i > 0; i--) {
                 TreeNode node = queue.poll();
-                list.add(node.val);
+                list.add(node.value);
                 if (node.left != null) {
                     queue.add(node.left);
                 }

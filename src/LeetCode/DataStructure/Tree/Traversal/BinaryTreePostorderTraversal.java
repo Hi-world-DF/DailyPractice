@@ -21,7 +21,7 @@ public class BinaryTreePostorderTraversal {
         while(!stack.isEmpty()){
             TreeNode node = stack.pop();
             if(node == null) continue;
-            resultList.add(node.val);
+            resultList.add(node.value);
             stack.push(node.left);
             stack.push(node.right);
         }
