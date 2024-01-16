@@ -1209,6 +1209,44 @@ public class test {
     }
 
     // 62.请实现两个函数，分别用来序列化和反序列化二叉树
+    // 使用特殊字符，如 "#" 代表 null，"," 作为分隔符
+    private static final String NULL_SIGN = "#";
+    private static final String SPLIT_SIGN = ",";
+
+    public String serialize(TreeNode root) {
+        StringBuilder sb = new StringBuilder();
+        this.serializeTree(root, sb);
+        return sb.toString();
+    }
+
+    private void serializeTree(TreeNode node, StringBuilder sb) {
+        if (null == node) {
+            sb.append(NULL_SIGN).append(SPLIT_SIGN);
+        } else {
+            sb.append(node.value).append(SPLIT_SIGN);
+            this.serializeTree(node.left, sb);
+            this.serializeTree(node.right, sb);
+        }
+    }
+
+    // 反序列化函数
+    public TreeNode deserialize(String data) {
+        String[] nodes = data.split(SPLIT_SIGN);
+        Queue<String> queue = new LinkedList<>(Arrays.asList(nodes));
+        return deserializeTree(queue);
+    }
+
+    private TreeNode deserializeTree(Queue<String> queue) {
+        String value = queue.poll();
+        if (value.equals(NULL_SIGN)) {
+            return null;
+        } else {
+            TreeNode node = new TreeNode(Integer.parseInt(value));
+            node.left = this.deserializeTree(queue);
+            node.right = this.deserializeTree(queue);
+            return node;
+        }
+    }
 
     // 63.给定一颗二叉搜索树，请找出其中的第k大的结点
 
