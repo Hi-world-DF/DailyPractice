@@ -1248,7 +1248,32 @@ public class test {
         }
     }
 
-    // 63.给定一颗二叉搜索树，请找出其中的第k大的结点
+    private int res = 0;
+    private int count = 0;
+
+    /**
+     * 63.给定一颗二叉搜索树，请找出其中的第k大的结点
+     *
+     * @param root 根节点
+     * @param k 第k大的
+     * @return 第k大的节点
+     */
+    public int kthLargest(TreeNode root, int k) {
+        inOrder(root, k);
+        return res;
+    }
+
+    private void inOrder(TreeNode node, int k) {
+        if(null == node || count >= k) {
+            return;
+        }
+        inOrder(node.right, k);
+        count++;
+        if (count == k) {
+            res = node.value;
+        }
+        inOrder(node.left, k);
+    }
 
     // 64.如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位
     //于中间的数值。如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
