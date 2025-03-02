@@ -1,4 +1,4 @@
-package swordFingerOffer.simple;
+package src.swordFingerOffer.simple;
 
 import java.util.Deque;
 import java.util.LinkedList;

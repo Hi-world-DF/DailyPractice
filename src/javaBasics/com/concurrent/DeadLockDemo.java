@@ -1,4 +1,4 @@
-package javaBasics.com.concurrent;
+package src.javaBasics.com.concurrent;
 /**
  * @auther : wdf
  * @create : 2020-06-01

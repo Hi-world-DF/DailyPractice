@@ -1,4 +1,4 @@
-package swordFingerOffer.simple;
+package src.swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 28. 对称的二叉树

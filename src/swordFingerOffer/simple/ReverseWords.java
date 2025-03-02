@@ -1,4 +1,4 @@
-package swordFingerOffer.simple;
+package src.swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 58 - I. 翻转单词顺序

@@ -1,4 +1,4 @@
-package swordFingerOffer.simple;
+package src.swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 17. 打印从1到最大的n位数

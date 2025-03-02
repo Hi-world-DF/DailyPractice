@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="UserServiceId" class="UserServiceImpl"/>
+    <!--
+    //创建service实例
+    BookService bookService = new BookServiceImpl();  IoC <bean>
+    //创建Dao实例
+    BookDao bookDao = new BookDaoImpl;    IoC
+    //将Dao设置给Service
+    bookService.setBookDao(bookDao);  DI <property>
+    -->
+    <bean id="bookServiceId" class="BookServiceImpl">
+        <!--
+        name:bean属性名，通过setter方法获得
+        ref：另一个bean的id值引用
+        -->
+        <property name="bookDao" ref="bookDaoId"></property>
+    </bean>
+    <bean id="bookDaoId" class="BookDaoImpl"></bean>
+</beans>

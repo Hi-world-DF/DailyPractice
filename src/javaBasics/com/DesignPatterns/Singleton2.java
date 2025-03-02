@@ -1,4 +1,4 @@
-package javaBasics.com.DesignPatterns;
+package src.javaBasics.com.DesignPatterns;
 
 /**
  * 单例模式：Ⅱ 饿汉式-线程安全
@@ -13,7 +13,7 @@ public class Singleton2 {
      * 线程不安全问题主要是由于 uniqueInstance 被实例化多次，
      * 采取直接实例化 uniqueInstance 的方式就不会产生线程不安全问题。
      */
-    private static Singleton2 uniqueInstance = new Singleton2();
+    private static final Singleton2 uniqueInstance = new Singleton2();
 
     private Singleton2(){
 

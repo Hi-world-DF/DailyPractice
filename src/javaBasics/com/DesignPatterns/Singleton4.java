@@ -1,4 +1,4 @@
-package javaBasics.com.DesignPatterns;
+package src.javaBasics.com.DesignPatterns;
 
 /**
  * 单例模式：Ⅳ 双重校验锁-线程安全
