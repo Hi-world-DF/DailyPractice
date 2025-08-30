@@ -5,6 +5,8 @@ import java.util.Scanner;
  * 二分查找
  * leetcode:https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
  * 在排序数组中查找元素的第一个和最后一个位置
+ *
+ * @author laomao
  * */
 public class FindFirstAndLastPositionOfElementInSortedArray {
     public int[] searchRange(int[] nums, int target) {
@@ -33,6 +35,7 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
         }
         return first;
     }
+
     /**
      * 测试
      * */
@@ -42,8 +45,8 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
         int[] nums = {2,2};
         int target = in.nextInt();
         int[] result = findFAL.searchRange(nums,target);
-        for(int i = 0;i < result.length;i++){
-            System.out.print(result[i]+" ");
+        for (int j : result) {
+            System.out.print(j + " ");
         }
     }
 }
