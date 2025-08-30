@@ -1,4 +1,4 @@
-package src.leetCode.everyday;
+package leetCode.everyday;
 
 /**
  * 304.二维区域和检索-矩阵不可变 ---解法2

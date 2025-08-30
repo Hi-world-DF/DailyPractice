@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.greedyAlgorithm;
+package leetCode.AlgorithmIdea.greedyAlgorithm;
 
 /**
  * 翻转矩阵后的得分:有一个二维矩阵 A 其中每个元素的值为 0 或 1 。
@@ -31,13 +31,13 @@ public class MatrixScore {
             int zero = 0;
             int one = 0;
             for (int j = 0; j < row; j++) {
-                if(A[j][i] == 1) {
+                if (A[j][i] == 1) {
                     one++;
                 } else {
                     zero++;
                 }
             }
-            if(zero > one) {
+            if (zero > one) {
                 for (int j = 0; j < row; j++) {
                     A[j][i] = (A[j][i] + 1) % 2;
                 }

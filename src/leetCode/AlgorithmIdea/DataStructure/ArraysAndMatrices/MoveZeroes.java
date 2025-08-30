@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.ArraysAndMatrices;
+package leetCode.AlgorithmIdea.DataStructure.ArraysAndMatrices;
 /**
  * 数据结构：数组和矩阵
  * leetcode：https://leetcode-cn.com/problems/move-zeroes/

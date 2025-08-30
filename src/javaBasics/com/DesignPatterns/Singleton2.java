@@ -1,4 +1,4 @@
-package src.javaBasics.com.DesignPatterns;
+package javaBasics.com.DesignPatterns;
 
 /**
  * 单例模式：Ⅱ 饿汉式-线程安全

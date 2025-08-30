@@ -1,4 +1,4 @@
-package src.swordFingerOffer.simple;
+package swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 46. 把数字翻译成字符串

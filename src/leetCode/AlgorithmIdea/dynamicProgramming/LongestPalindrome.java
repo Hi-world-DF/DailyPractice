@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.dynamicProgramming;
+package leetCode.AlgorithmIdea.dynamicProgramming;
 
 /**
  * leetcode 5. 最长回文子串
@@ -40,7 +40,7 @@ public class LongestPalindrome {
                         dp[j][i] = dp[j + 1][i - 1];
                     }
                 }
-                if (dp[j][i] && i - j + 1> maxRes) {
+                if (dp[j][i] && i - j + 1 > maxRes) {
                     maxRes = i - j + 1;
                     begin = j;
                 }

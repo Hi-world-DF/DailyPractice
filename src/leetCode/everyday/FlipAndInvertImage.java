@@ -1,4 +1,4 @@
-package src.leetCode.everyday;
+package leetCode.everyday;
 
 /**
  * 翻转二维数组：先水平翻转然后全部反转

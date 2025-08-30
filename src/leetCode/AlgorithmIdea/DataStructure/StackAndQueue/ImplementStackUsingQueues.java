@@ -1,14 +1,16 @@
-package src.leetCode.AlgorithmIdea.DataStructure.StackAndQueue;
+package leetCode.AlgorithmIdea.DataStructure.StackAndQueue;
 /**
  * 数据结构：栈和队列
  * leetcode：https://leetcode-cn.com/problems/implement-stack-using-queues/
  * 用队列实现栈
- * */
+ */
+
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class ImplementStackUsingQueues {
     private Queue<Integer> queue;
+
     /** Initialize your data structure here. */
     public ImplementStackUsingQueues() {
         queue = new LinkedList<>();
@@ -18,7 +20,7 @@ public class ImplementStackUsingQueues {
     public void push(int x) {
         queue.add(x);
         int size = queue.size();
-        while(size > 1){
+        while (size > 1) {
             queue.add(queue.poll());
             size--;
         }

@@ -1,9 +1,10 @@
-package src.leetCode.AlgorithmIdea.DataStructure.LinkedList;
+package leetCode.AlgorithmIdea.DataStructure.LinkedList;
+
 /**
  * 数据结构：链表
  * leetcode：https://leetcode-cn.com/problems/reverse-linked-list/
  * 链表反转
- * */
+ */
 public class ReverseLinkedList {
 
     /**
@@ -20,18 +21,18 @@ public class ReverseLinkedList {
 //        return newHead;
 //    }
 
-        /**
-         * 头插法
-         * */
-        public ListNode reverseList(ListNode head){
-            ListNode newHead = new ListNode(-1);
-            while(head != null){
-                ListNode next = head.next;
-                head.next = newHead.next;
-                newHead.next = head;
-                head = next;
-            }
-            return newHead;
+    /**
+     * 头插法
+     */
+    public ListNode reverseList(ListNode head) {
+        ListNode newHead = new ListNode(-1);
+        while (head != null) {
+            ListNode next = head.next;
+            head.next = newHead.next;
+            newHead.next = head;
+            head = next;
         }
+        return newHead;
+    }
 
 }

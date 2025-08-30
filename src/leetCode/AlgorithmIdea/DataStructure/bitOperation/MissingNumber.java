@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.bitOperation;
+package leetCode.AlgorithmIdea.DataStructure.bitOperation;
 /**
  * 数据结构：位运算
  * leetcode：https://leetcode-cn.com/problems/missing-number/

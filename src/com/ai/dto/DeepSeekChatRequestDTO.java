@@ -1,4 +1,4 @@
-package src.com.ai.dto;
+package com.ai.dto;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package src.com.ai;
+package com.ai;
 
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.CoreDocument;

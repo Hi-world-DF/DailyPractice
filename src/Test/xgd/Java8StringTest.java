@@ -1,4 +1,4 @@
-package src.Test.xgd;
+package Test.xgd;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.Test;

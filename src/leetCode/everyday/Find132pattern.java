@@ -1,4 +1,4 @@
-package src.leetCode.everyday;
+package leetCode.everyday;
 
 /**
  * 456. 132模式

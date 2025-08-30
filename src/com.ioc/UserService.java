@@ -1,4 +1,4 @@
-package src.com.ioc;
+package com.ioc;
 
 public interface UserService {
     public void addUser();

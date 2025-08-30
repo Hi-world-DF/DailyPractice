@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.Tree.Traversal;
+package leetCode.AlgorithmIdea.DataStructure.Tree.Traversal;
 
 import src.swordFingerOffer.simple.TreeNode;
 
@@ -15,7 +15,9 @@ public class BinaryTreeInorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> resultList = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
-        if(root == null) return resultList;
+        if(root == null) {
+            return resultList;
+        }
         TreeNode currentNode = root;
         while(currentNode != null || !stack.isEmpty()){
             while(currentNode != null){

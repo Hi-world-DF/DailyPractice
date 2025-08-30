@@ -1,4 +1,4 @@
-package src.swordFingerOffer.simple;
+package swordFingerOffer.simple;
 
 /**
  * TreeNode

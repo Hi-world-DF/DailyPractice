@@ -1,4 +1,4 @@
-package src.leetCode.everyday;
+package leetCode.everyday;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class YanghuiTriangle {
      * 在杨辉三角中，每个数是它左上方和右上方的数的和。
      *
      * @param numRows 行数
-     * @return List<List<Integer>> 生成的杨辉三角列表
+     * @return List<List < Integer>> 生成的杨辉三角列表
      */
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> res = new ArrayList<>();
@@ -26,7 +26,7 @@ public class YanghuiTriangle {
                 if (j == 0 || j == i) {
                     cur.add(1);
                 } else {
-                    cur.add(res.get(i-1).get(j-1) + res.get(i-1).get(j));
+                    cur.add(res.get(i - 1).get(j - 1) + res.get(i - 1).get(j));
                 }
             }
             res.add(cur);

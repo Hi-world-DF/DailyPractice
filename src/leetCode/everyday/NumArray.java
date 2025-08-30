@@ -1,4 +1,4 @@
-package src.leetCode.everyday;
+package leetCode.everyday;
 
 /**
  * 303.区域和检索 - 数组不可变
@@ -20,7 +20,7 @@ public class NumArray {
         int len = nums.length;
         sums = new int[len + 1];
         for (int i = 0; i < len; i++) {
-            sums[i+1] = sums[i] + nums[i];
+            sums[i + 1] = sums[i] + nums[i];
         }
     }
 
@@ -32,6 +32,6 @@ public class NumArray {
      * @return 返回差值
      */
     public int sumRange(int i, int j) {
-        return sums[j+1] - sums[i];
+        return sums[j + 1] - sums[i];
     }
 }

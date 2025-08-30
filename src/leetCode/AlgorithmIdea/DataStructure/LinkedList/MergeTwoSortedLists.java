@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.LinkedList;
+package leetCode.AlgorithmIdea.DataStructure.LinkedList;
 /**
  * 数据结构：链表
  * leetcode：https://leetcode-cn.com/problems/merge-two-sorted-lists/

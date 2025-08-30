@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.StackAndQueue;
+package leetCode.AlgorithmIdea.DataStructure.StackAndQueue;
 
 /**
  * 删除字符串中的所有相邻重复项

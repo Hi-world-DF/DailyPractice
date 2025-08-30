@@ -1,4 +1,4 @@
-package src.leetCode.sortAll;
+package leetCode.sortAll;
 /**
  * 希尔排序
  * */

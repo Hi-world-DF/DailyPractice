@@ -1,4 +1,6 @@
-package src.swordFingerOffer.simple;
+package swordFingerOffer.simple;
+
+import leetCode.everyday.ListNode;
 
 /**
  * 剑指 Offer 24. 反转链表

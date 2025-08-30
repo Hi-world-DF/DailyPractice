@@ -1,6 +1,6 @@
-package src.swordFingerOffer.all;
+package swordFingerOffer.all;
 
-import src.leetCode.everyday.ListNode;
+import leetCode.everyday.ListNode;
 import src.swordFingerOffer.simple.TreeNode;
 
 import java.util.ArrayList;

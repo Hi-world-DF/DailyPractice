@@ -1,4 +1,4 @@
-package src.swordFingerOffer.simple;
+package swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 27. 二叉树的镜像

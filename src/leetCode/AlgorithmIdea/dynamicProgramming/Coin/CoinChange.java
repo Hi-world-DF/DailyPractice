@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.dynamicProgramming.Coin;
+package leetCode.AlgorithmIdea.dynamicProgramming.Coin;
 
 /**
  * leetcode 322. 零钱兑换
@@ -13,12 +13,12 @@ public class CoinChange {
      * 编写一个函数来计算可以凑成总金额所需的最少的硬币个数。
      * 如果没有任何一种硬币组合能组成总金额，返回 -1。
      *
-     * @param coins 硬币面值数组
+     * @param coins  硬币面值数组
      * @param amount 总金额
      * @return 最少硬币个数
      */
     public int coinChange(int[] coins, int amount) {
-        int[] dp  = new int[amount + 1];
+        int[] dp = new int[amount + 1];
         int n = coins.length;
         dp[0] = 0;
         for (int i = 1; i < amount + 1; i++) {
@@ -33,5 +33,5 @@ public class CoinChange {
             return -1;
         }
         return dp[amount];
-     }
+    }
 }

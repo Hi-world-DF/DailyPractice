@@ -1,10 +1,10 @@
-package src.com.ai;
+package com.ai;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
-import src.com.ai.dto.DeepSeekApiChatMessage;
-import src.com.ai.dto.DeepSeekChatRequestDTO;
+import com.ai.dto.DeepSeekApiChatMessage;
+import com.ai.dto.DeepSeekChatRequestDTO;
 
 import java.io.IOException;
 import java.util.Arrays;

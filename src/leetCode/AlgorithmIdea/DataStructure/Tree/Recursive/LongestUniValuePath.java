@@ -1,6 +1,6 @@
 package src.leetCode.AlgorithmIdea.DataStructure.Tree.Recursive;
 
-import src.swordFingerOffer.simple.TreeNode;
+import swordFingerOffer.simple.TreeNode;
 
 /**
  * 数据结构：树【递归】

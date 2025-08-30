@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.math;
+package leetCode.AlgorithmIdea.math;
 
 /**
  * 8. 字符串转换整数 (atoi)
@@ -43,7 +43,7 @@ public class MyAtoi {
         }
         int j = i;
         int res = 0;
-        while (j < n && s.charAt(j) <= '9' && s.charAt(j) >= '0' ) {
+        while (j < n && s.charAt(j) <= '9' && s.charAt(j) >= '0') {
             res = (s.charAt(j) - '0') + res * 10;
             if (res > Integer.MAX_VALUE / 10 || (res == Integer.MAX_VALUE / 10 && (s.charAt(j) - '0') > Integer.MAX_VALUE % 10)) {
                 return Integer.MIN_VALUE;

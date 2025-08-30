@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.ArraysAndMatrices;
+package leetCode.AlgorithmIdea.DataStructure.ArraysAndMatrices;
 import org.junit.Test;
 
 /**

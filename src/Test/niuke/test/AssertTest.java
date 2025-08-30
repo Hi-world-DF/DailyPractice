@@ -1,4 +1,4 @@
-package src.Test.niuke.test;
+package Test.niuke.test;
 
 /**
  * （1）assert [boolean 表达式]

@@ -1,4 +1,4 @@
-package src.Test.niuke.test;
+package Test.niuke.test;
 
 //单例模式--双重校验---线程安全
 public class Singleton {

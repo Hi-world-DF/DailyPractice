@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.Tree.Traversal;
+package leetCode.AlgorithmIdea.DataStructure.Tree.Traversal;
 
 import src.swordFingerOffer.simple.TreeNode;
 
@@ -16,11 +16,15 @@ public class BinaryTreePostorderTraversal {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> resultList = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
-        if(root == null) return resultList;
+        if(root == null) {
+            return resultList;
+        }
         stack.push(root);
         while(!stack.isEmpty()){
             TreeNode node = stack.pop();
-            if(node == null) continue;
+            if(node == null) {
+                continue;
+            }
             resultList.add(node.value);
             stack.push(node.left);
             stack.push(node.right);

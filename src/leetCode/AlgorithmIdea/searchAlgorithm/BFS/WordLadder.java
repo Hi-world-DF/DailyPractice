@@ -1,9 +1,10 @@
-package src.leetCode.AlgorithmIdea.searchAlgorithm.BFS;
+package leetCode.AlgorithmIdea.searchAlgorithm.BFS;
 /**
  * 搜索算法：BFS（广度优先搜索）
  * leetcode:https://leetcode-cn.com/problems/word-ladder/
  * 单词接龙
- * */
+ */
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -16,15 +17,19 @@ public class WordLadder {
          * */
         //将开始的单词也加入单词表中
         wordList.add(beginWord);
-        int start = wordList.size() -1;
+        int start = wordList.size() - 1;
         int hasEnd = 0;
         //遍历整个单词表，判断是否存在结束的单词
         for (int i = 0; i < wordList.size(); i++) {
             hasEnd = i;
-            if(wordList.get(i).equals(endWord)) break;
+            if (wordList.get(i).equals(endWord)) {
+                break;
+            }
         }
         //如果计数到了最后一个单词，说明单词表不存在结束的单词，返回0
-        if(hasEnd == wordList.size()-1) return 0;
+        if (hasEnd == wordList.size() - 1) {
+            return 0;
+        }
         /**
          * 2.调用buildGraphic(wordList)建立单词图，如两个单词只有一个字母不一样，表示相邻
          */
@@ -32,7 +37,7 @@ public class WordLadder {
         /**
          * 3.调用getShortestPath，获取开始单词到结束单词的最短转换路径长度
          * */
-        return getShortestPath(graphic,start,hasEnd);
+        return getShortestPath(graphic, start, hasEnd);
     }
 
     /**
@@ -51,17 +56,17 @@ public class WordLadder {
         marked[start] = true;
         int path = 1;
         //队列非空，则path++;取出队列首元素，判断是否为结束单词，不是且未遍历过则压入队列，循环直到找到结束单词，返回path长度
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int size = queue.size();
             path++;
-            while(size > 0){
+            while (size > 0) {
                 int cur = queue.poll();
                 size--;
-                for (int next:graphic[cur]) {
-                    if(next == end){
+                for (int next : graphic[cur]) {
+                    if (next == end) {
                         return path;
                     }
-                    if(marked[next]){
+                    if (marked[next]) {
                         continue;
                     }
                     marked[next] = true;
@@ -103,8 +108,9 @@ public class WordLadder {
         int diffCnt = 0;
         //如果两个单词的不同的字符数不为1则两个单词不相邻
         for (int i = 0; i < s1.length() && diffCnt <= 1; i++) {
-            if(s1.charAt(i) != s2.charAt(i))
+            if (s1.charAt(i) != s2.charAt(i)) {
                 diffCnt++;
+            }
         }
         return diffCnt == 1;
     }

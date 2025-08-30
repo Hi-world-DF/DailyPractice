@@ -1,4 +1,4 @@
-package src.leetCode.everyday;
+package leetCode.everyday;
 
 /**
  * 1769. 移动所有球到每个盒子所需的最小操作数

@@ -1,4 +1,4 @@
-package src.Test.xgd;
+package Test.xgd;
 
 import java.util.*;
 import java.util.stream.Collectors;

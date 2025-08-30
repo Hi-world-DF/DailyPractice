@@ -1,4 +1,4 @@
-package src.Test;
+package Test;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Rectangle;

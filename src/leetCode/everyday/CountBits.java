@@ -1,4 +1,4 @@
-package src.leetCode.everyday;
+package leetCode.everyday;
 
 /**
  * 比特位计数:给定一个非负整数 num。对于 0 ≤ i ≤ num 范围中的每个数字 i ;

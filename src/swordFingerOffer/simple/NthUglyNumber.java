@@ -1,4 +1,4 @@
-package src.swordFingerOffer.simple;
+package swordFingerOffer.simple;
 
 /**
  * 剑指 Offer 49. 丑数
@@ -18,8 +18,8 @@ public class NthUglyNumber {
         int[] dp = new int[n + 1];
         dp[0] = 1;
         int a = 0, b = 0, c = 0;
-        for (int i = 1; i < n+1; i++) {
-            dp[i] = Math.min(dp[a] * 2 , Math.min(dp[b] * 3, dp[c] * 5));
+        for (int i = 1; i < n + 1; i++) {
+            dp[i] = Math.min(dp[a] * 2, Math.min(dp[b] * 3, dp[c] * 5));
             if (dp[i] == dp[a] * 2) {
                 a++;
             }

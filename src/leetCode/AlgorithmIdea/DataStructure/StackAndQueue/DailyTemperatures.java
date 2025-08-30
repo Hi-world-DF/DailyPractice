@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.StackAndQueue;
+package leetCode.AlgorithmIdea.DataStructure.StackAndQueue;
 
 import java.util.Stack;
 
@@ -6,7 +6,7 @@ import java.util.Stack;
  * 数据结构：栈和队列
  * leetcode：https://leetcode-cn.com/problems/daily-temperatures/
  * 每日温度
- * */
+ */
 public class DailyTemperatures {
     //方法一：暴力破解
     public int[] dailyTemperatures1(int[] T) {
@@ -30,8 +30,8 @@ public class DailyTemperatures {
         int n = T.length;
         int[] result = new int[n];
         Stack<Integer> stack = new Stack<>();
-        for(int i = 0;i < n;i++){
-            while(!stack.isEmpty() && T[i] > T[stack.peek()]){
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && T[i] > T[stack.peek()]) {
                 int value = stack.pop();
                 result[value] = i - value;
             }

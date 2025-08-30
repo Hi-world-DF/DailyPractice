@@ -1,4 +1,4 @@
-package src.leetCode.niuke;
+package leetCode.niuke;
 
 import java.util.Scanner;
 

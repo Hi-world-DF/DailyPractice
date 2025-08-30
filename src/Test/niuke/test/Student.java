@@ -1,4 +1,4 @@
-package src.Test.niuke.test;
+package Test.niuke.test;
 
 import java.util.Set;
 import java.util.TreeSet;

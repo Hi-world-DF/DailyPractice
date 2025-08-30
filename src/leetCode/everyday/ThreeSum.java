@@ -1,4 +1,4 @@
-package src.leetCode.everyday;
+package leetCode.everyday;
 
 import java.util.ArrayList;
 import java.util.List;

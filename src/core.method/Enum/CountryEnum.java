@@ -1,4 +1,4 @@
-package src.core.method.Enum;
+package core.method.Enum;
 
 public enum CountryEnum {
     ONE(1, "name", "tel"), TWO(2, "wang", "131"), THREE(3, "liu", "121"), FOUR(4, "zhao", "133"), FIVE(5, "zhou", "159");

@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.Tree.Recursive;
+package leetCode.AlgorithmIdea.DataStructure.Tree.Recursive;
 
 import src.swordFingerOffer.simple.TreeNode;
 
@@ -18,6 +18,7 @@ public class IsBalanced {
      * @return
      */
     boolean res = true;
+
     public boolean isBalanced(TreeNode root) {
         getMaxDepth(root);
         return res;
@@ -32,6 +33,6 @@ public class IsBalanced {
         if (Math.abs(rMax - lMax) > 1) {
             res = false;
         }
-        return Math.max(lMax , rMax) + 1;
+        return Math.max(lMax, rMax) + 1;
     }
 }

@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.binarySearch;
+package leetCode.AlgorithmIdea.binarySearch;
 /**
  * 二分查找
  * leetcode:https://leetcode-cn.com/problems/single-element-in-a-sorted-array/description/

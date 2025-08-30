@@ -1,11 +1,12 @@
-package src.leetCode.AlgorithmIdea.greedyAlgorithm;
+package leetCode.AlgorithmIdea.greedyAlgorithm;
+
 /**
  * 贪心算法
  * leetcode:https://leetcode-cn.com/problems/is-subsequence/
  * 判断是否是子序列
- * */
+ */
 public class IsSubsequence {
-    public static boolean isSubsequence(String s,String t) {
+    public static boolean isSubsequence(String s, String t) {
 //        int si = s.length();
 //        int ti = t.length();
 //        for (int i = 1, j = 1; i < ti && j <= si;) {
@@ -22,7 +23,7 @@ public class IsSubsequence {
         /**循环比较s中的字符
          *s.toCharArray()将s字符串转换为字符数组
          */
-        for(char c : s.toCharArray()){
+        for (char c : s.toCharArray()) {
             /**
              * 没找到，返回-1
              * 1.int indexOf(String str):
@@ -34,17 +35,18 @@ public class IsSubsequence {
              * 4.int lastIndexOf(String str, int startIndex):
              *      从指定的索引处开始向后搜索，返回在此字符串中最后一次出现的指定子字符串的索引
              * */
-            index = t.indexOf(c,index+1);
-            if(index == -1){
+            index = t.indexOf(c, index + 1);
+            if (index == -1) {
                 return false;
             }
         }
         return true;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         String s = "abc";
         String t = "ahbgc";
-        boolean result = IsSubsequence.isSubsequence(s,t);
+        boolean result = IsSubsequence.isSubsequence(s, t);
         System.out.println(result);
     }
 }

@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.dynamicProgramming.longestIncreasingSubsequence;
+package leetCode.AlgorithmIdea.dynamicProgramming.longestIncreasingSubsequence;
 /**
  * 动态规划：最长递增子序列
  * leetcode:https://leetcode-cn.com/problems/longest-increasing-subsequence/

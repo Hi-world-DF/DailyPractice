@@ -1,4 +1,4 @@
-package src.Test.niuke.test.netEasy;
+package Test.niuke.test.netEasy;
 
 /**
  * 题目描述：https://www.nowcoder.com/questionTerminal/f02fe9dda1c443bdbe14b5775727124f

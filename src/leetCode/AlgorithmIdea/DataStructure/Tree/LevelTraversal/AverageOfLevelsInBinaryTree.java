@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.Tree.LevelTraversal;
+package leetCode.AlgorithmIdea.DataStructure.Tree.LevelTraversal;
 
 import src.swordFingerOffer.simple.TreeNode;
 
@@ -16,7 +16,9 @@ public class AverageOfLevelsInBinaryTree {
     public List<Double> averageOfLevels(TreeNode root) {
         List<Double> result = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
-        if(root == null) return result;
+        if(root == null) {
+            return result;
+        }
         queue.add(root);
         while(!queue.isEmpty()){
             double sum = 0;
@@ -24,8 +26,12 @@ public class AverageOfLevelsInBinaryTree {
             for (int i = 0; i < currentL; i++) {
                 TreeNode node = queue.poll();
                 sum += node.value;
-                if (node.left != null) queue.add(node.left);
-                if (node.right != null) queue.add(node.right);
+                if (node.left != null) {
+                    queue.add(node.left);
+                }
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
             }
             result.add(sum / currentL);
         }

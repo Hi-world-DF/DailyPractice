@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.dynamicProgramming.Coin;
+package leetCode.AlgorithmIdea.dynamicProgramming.Coin;
 
 /**
  * 面试题 08.11. 硬币

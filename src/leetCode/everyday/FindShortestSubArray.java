@@ -1,4 +1,4 @@
-package src.leetCode.everyday;
+package leetCode.everyday;
 
 import java.util.HashMap;
 import java.util.Map;
