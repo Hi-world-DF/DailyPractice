@@ -1,7 +1,7 @@
 package leetCode.AlgorithmIdea.DataStructure.Tree.BST;
 
-import src.leetCode.everyday.ListNode;
-import src.swordFingerOffer.simple.TreeNode;
+import leetCode.everyday.ListNode;
+import swordFingerOffer.simple.TreeNode;
 
 /**
  * 数据结构：树【BST 二叉查找树】
@@ -10,8 +10,12 @@ import src.swordFingerOffer.simple.TreeNode;
  */
 public class ConvertSortedListToBinarySearchTree {
     public TreeNode sortedListToBST(ListNode head) {
-        if (head == null) return null;
-        if (head.next == null) return new TreeNode(head.val);
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
+            return new TreeNode(head.val);
+        }
         ListNode preMid = preMid(head);
         ListNode mid = preMid.next;
         preMid.next = null;

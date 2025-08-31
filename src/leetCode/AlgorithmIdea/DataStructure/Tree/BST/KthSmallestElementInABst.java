@@ -1,6 +1,6 @@
 package leetCode.AlgorithmIdea.DataStructure.Tree.BST;
 
-import src.swordFingerOffer.simple.TreeNode;
+import swordFingerOffer.simple.TreeNode;
 
 /**
  * 数据结构：树【BST 二叉查找树】
@@ -19,7 +19,9 @@ public class KthSmallestElementInABst {
     }
 
     private void inOder(TreeNode root, int k) {
-        if (root == null) return;
+        if (root == null) {
+            return;
+        }
         inOder(root.left, k);
         count++;
         if (count == k) {

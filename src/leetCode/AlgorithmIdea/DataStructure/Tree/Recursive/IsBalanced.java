@@ -1,6 +1,6 @@
 package leetCode.AlgorithmIdea.DataStructure.Tree.Recursive;
 
-import src.swordFingerOffer.simple.TreeNode;
+import swordFingerOffer.simple.TreeNode;
 
 /**
  * 面试题 04.04. 检查平衡性

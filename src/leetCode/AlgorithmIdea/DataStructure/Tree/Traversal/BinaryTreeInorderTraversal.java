@@ -1,6 +1,6 @@
 package leetCode.AlgorithmIdea.DataStructure.Tree.Traversal;
 
-import src.swordFingerOffer.simple.TreeNode;
+import swordFingerOffer.simple.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

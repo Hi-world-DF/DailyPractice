@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.Tree.Recursive;
+package leetCode.AlgorithmIdea.DataStructure.Tree.Recursive;
 
 import swordFingerOffer.simple.TreeNode;
 

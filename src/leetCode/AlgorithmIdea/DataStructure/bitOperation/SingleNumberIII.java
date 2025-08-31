@@ -1,4 +1,4 @@
-package src.leetCode.AlgorithmIdea.DataStructure.bitOperation;
+package leetCode.AlgorithmIdea.DataStructure.bitOperation;
 
 import java.util.HashMap;
 
